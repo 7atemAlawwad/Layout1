@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 10% 90%;
+  transition: grid-template-columns 0.3s ease;
+}
+.dashboard.expanded {
+  grid-template-columns: 250px auto;
+}
+.dashboard .sidebar {
+  background-color: #0e4a66;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  width: 80px;
+  transition: width 0.3s ease;
+}
+.dashboard .sidebar.expanded {
+  width: 250px;
+}
+.dashboard .sidebar.expanded .icon .text {
+  display: inline;
+  visibility: visible;
+  opacity: 1;
+  position: static;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin-left: 10px;
+}
+.dashboard .sidebar .logo {
+  margin-bottom: 20px;
+}
+.dashboard .sidebar .logo img {
+  max-width: 50px;
+}
+.dashboard .sidebar nav {
+  display: grid;
+  gap: 280%;
+}
+.dashboard .sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+}
+.dashboard .sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.dashboard .sidebar nav ul li:hover {
+  background-color: #146b93;
+  border-radius: 10px;
+}
+.dashboard .sidebar nav ul li .icon {
+  font-size: 20px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.dashboard .sidebar nav ul li .icon .img {
+  height: 20px;
+}
+.dashboard .sidebar nav ul li .icon .text {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.dashboard .sidebar nav ul li .icon:hover .text {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.dashboard .sidebar nav .menu-toggle {
+  display: block;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.dashboard .sidebar nav .menu-toggle:focus {
+  outline: none;
+}
+.dashboard .content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px;
+}
+.dashboard .content .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.dashboard .content .header h1 {
+  font-size: 1.5rem;
+  color: #0e4a66;
+  margin-inline: 10px;
+}
+.dashboard .content .header .filters {
+  display: flex;
+  gap: 10px;
+}
+.dashboard .content .header .filters input,
+.dashboard .content .header .filters select {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.dashboard .content .header .filters .btn-primary {
+  background-color: #f7c948;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dashboard .content .header .filters .btn-primary:hover {
+  background-color: #f5bb17;
+}
+.dashboard .content .table-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dashboard .content .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.dashboard .content .table-container table thead {
+  background-color: #0e4a66;
+  color: #ffffff;
+}
+.dashboard .content .table-container table thead th {
+  padding: 15px;
+}
+.dashboard .content .table-container table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+.dashboard .content .table-container table tbody tr td {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.dashboard .content .table-container table tbody tr button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.dashboard .content .table-container .pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.dashboard .content .table-container .pagination select {
+  padding: 5px;
+}/*# sourceMappingURL=styles.css.map */

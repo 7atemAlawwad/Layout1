@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="pngegg.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li class="active">
+            <span class="icon"><img class="img" src="image copy.png" alt="user"><span class="text">User</span></span>
+          </li>
+          <li>
+            <span class="icon">⚙️<span class="text">Settings</span></span>
+          </li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+      </nav>
+      
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Clients</h1>
+        <div class="filters">
+          <input type="text" placeholder="Search">
+          <select>
+            <option>State</option>
+            <option>Riyadh</option>
+            <option>Qassim</option>
+          </select>
+          <select>
+            <option>City</option>
+            <option>Riyadh</option>
+            <option>Qassim</option>
+            <option>Dawadmi</option>
+          </select>
+          <select>
+            <option>Neighborhood</option>
+            <option>no1</option>
+            <option>no2</option>
+          </select>
+          <button class="btn-primary">New Client</button>
+        </div>
+      </header>
+
+      <section class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Company Name</th>
+              <th>Representative</th>
+              <th>Tax ID</th>
+              <th>State</th>
+              <th>City</th>
+              <th>Neighborhood</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ELM</td>
+              <td>Hatem</td>
+              <td>111111111111</td>
+              <td>Riyadh</td>
+              <td>Riyadh</td>
+              <td>Olaya</td>
+              <td>
+                <button class="icon-view">👁️</button>
+                <button class="icon-edit">✏️</button> 
+                <button class="icon-delete">🗑️</button> 
+              </td>
+            </tr>
+            <tr>
+                <td>ELM</td>
+                <td>Hatem</td>
+                <td>111111111111</td>
+                <td>Riyadh</td>
+                <td>Riyadh</td>
+                <td>Olaya</td>
+                <td>
+                  <button class="icon-view">👁️</button>
+                  <button class="icon-edit">✏️</button> 
+                  <button class="icon-delete">🗑️</button> 
+                </td>
+              </tr>
+              <tr>
+                <td>ELM</td>
+                <td>Hatem</td>
+                <td>111111111111</td>
+                <td>Riyadh</td>
+                <td>Riyadh</td>
+                <td>Olaya</td>
+                <td>
+                  <button class="icon-view">👁️</button>
+                  <button class="icon-edit">✏️</button> 
+                  <button class="icon-delete">🗑️</button> 
+                </td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <span>Rows per page:</span>
+          <select>
+            <option>10</option>
+            <option>20</option>
+          </select>
+          <span>Previous</span>
+          <span class="page-number">1</span>
+          <span>Next</span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
